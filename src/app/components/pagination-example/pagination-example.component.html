@@ -1,0 +1,39 @@
+<p>pagination-example works!</p>
+<pagination [totalItems]="70" [(ngModel)]="currentPage" 
+(pageChanged)="pageChanged($event)"
+[boundaryLinks]="false"
+[directionLinks]="true"
+previousText="&lsaquo;"
+nextText="&rsaquo;"
+[disabled]="false" 
+[maxSize]="3"
+[rotate]="false"
+></pagination>
+
+<div class="row">
+    <p>Pager used</p>
+    <div class="col-6">
+        <pager
+        [totalItems]="70"
+        [align]="true"
+        [(ngModel)]="currentPage"
+        (pageChanged)="pageChanged($event)"
+        pageBtnClass="btn"
+        [itemsPerPage]="10"
+        class="pull-left">
+      </pager>
+    </div>
+</div>
+
+<div>
+    <p>Anoter pagination</p>
+    <!-- <pagination [totalItems]="150"
+            [boundaryLinks]="true"
+            [customFirstTemplate]="firstTemplate"
+            [customLastTemplate]="lastTemplate"
+            [customPreviousTemplate]="prevTemplate"
+            [customNextTemplate]="nextTemplate"
+            [customPageTemplate]="pageTemplate">
+    </pagination> -->
+
+</div>

@@ -1,0 +1,109 @@
+<p>caruousel</p>
+<div style="width: 500px;">
+    <carousel>
+        <slide>
+            <img src="https://media.istockphoto.com/id/1939608350/photo/happy-mature-latin-man-using-laptop-at-home-technology-and-smart-working-concept.webp?s=2048x2048&w=is&k=20&c=zJLBixghpZaMcWgm27mLDTFiFqAmFk7EN2aCfJYAMmQ=" alt="first slide" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="https://media.istockphoto.com/id/1939608350/photo/happy-mature-latin-man-using-laptop-at-home-technology-and-smart-working-concept.webp?s=2048x2048&w=is&k=20&c=zJLBixghpZaMcWgm27mLDTFiFqAmFk7EN2aCfJYAMmQ=" alt="second slide" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="https://media.istockphoto.com/id/1939608350/photo/happy-mature-latin-man-using-laptop-at-home-technology-and-smart-working-concept.webp?s=2048x2048&w=is&k=20&c=zJLBixghpZaMcWgm27mLDTFiFqAmFk7EN2aCfJYAMmQ=" alt="third slide" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+</div>
+
+<br><br>
+
+<carousel [interval]="3000" (activeSlideChange)="log($event)"
+[itemsPerSlide]="3"
+[singleSlideOffset]="true"
+[startFromIndex]="5"
+(slideRangeChange)="onSlideRangeChange($event)"
+[isAnimated]="true"
+>
+    <slide>
+        <img src="assets/images/1.webp" alt="first slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+    </slide>
+    <slide>
+        <img src="assets/images/2.jpg" alt="second slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </slide>
+    <slide>
+        <img src="assets/images/3.jpg" alt="third slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </slide>
+    <slide>
+        <img src="assets/images/3.jpg" alt="third slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </slide>
+    <slide>
+        <img src="assets/images/3.jpg" alt="third slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </slide>
+    <slide>
+        <img src="assets/images/3.jpg" alt="third slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </slide>
+    <slide>
+        <img src="assets/images/3.jpg" alt="third slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </slide>
+    <slide>
+        <img src="assets/images/3.jpg" alt="third slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </slide>
+    <slide>
+        <img src="assets/images/3.jpg" alt="third slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </slide>
+    <slide>
+        <img src="assets/images/3.jpg" alt="third slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </slide>
+    <slide>
+        <img src="assets/images/3.jpg" alt="third slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </slide>
+</carousel>
+
+<div>
+    <!-- <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating>
+    <div class="card">
+        <pre class="card-block card-header" style="margin:15px 0;">Rate: <b>{{rate}}</b> </pre>
+    </div> -->
+</div>

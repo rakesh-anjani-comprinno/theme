@@ -1,0 +1,40 @@
+<!-- <ng-container *ngFor="let form of formArray.controls; let i = index">
+    <form [formGroup]="formArray.at(i)">
+        <input type="text" id="first-named" formControlName="userCount" />
+        <input type="text" id="first-name" formControlName="reportDownloadCount" />
+        <textarea id="342" formControlName="permission"></textarea>
+    </form>
+</ng-container> -->
+
+<!-- <ng-container *ngFor="let item of data; let i = index ">
+    <p class="mb-3">Form {{i+1}}</p>
+    <form [formGroup]="item.form">
+        <div>
+            <input type="text" formControlName="userCount" />
+        </div><br>
+        
+        <div>
+            <input type="text" formControlName="reportDownloadCount" />
+        </div><br>
+        <div>
+            <input type="text" formControlName="permission" />
+        </div><br>
+
+    </form>
+</ng-container> -->
+
+<ng-container *ngFor="let item of demoForm.controls ; let i = index">
+    <!-- {{ item.value | json}} -->
+    <p>{{i+1}}</p>
+    <form [formGroup]="item">
+        <div class="mb-3">
+            <input formControlName="userCount" />
+        </div>
+        <div class="mb-3">
+            <input formControlName="reportDownloadCount" />
+        </div>
+        <div class="mb-3">
+            <textarea formControlName="permission" ></textarea>
+        </div>
+    </form>
+</ng-container>

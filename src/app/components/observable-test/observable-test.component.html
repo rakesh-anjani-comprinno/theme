@@ -1,0 +1,30 @@
+
+<div class="row">
+    <div class="col-6">
+        <form [formGroup]="form">
+            <input type="text" formControlName="name">
+            <input type="text" formControlName="age">
+            <input type="submit" (click)="addPerson()" value="submit">
+        </form>
+    </div>
+    <div class="col-6 border ">
+        <h1>
+            <span class="fw-3 text-center">Observable Test</span>
+        </h1>
+        <div *ngIf="$persons | async as persons ; else loadingTemp">
+            <div *ngIf="persons.length !== 0">
+                <div *ngFor="let person of persons">
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0">{{ person?.name }}</p>
+                        <p class="mb-0">{{ person?.age }}</p>
+                        <button (click)="deletePerson(person?.name)">delete person</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #loadingTemp>
+    <p>loading ....</p>
+</ng-template>
