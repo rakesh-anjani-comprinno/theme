@@ -1,0 +1,26 @@
+p{
+    font-weight: 800;
+}
+$color: #216ab3;
+
+@mixin button-color-hover($color) {
+    
+    &:hover:not(:disabled):not(.disabled) {
+        color: $color;
+    }
+}
+  
+.button-primary {
+background-color: lightblue;
+border: 1px solid darkblue;
+
+@include button-color-hover(blue);
+}
+  
+.button-secondary {
+background-color: lightgreen;
+border: 1px solid darkgreen;
+
+@include button-color-hover(green);
+}
+  

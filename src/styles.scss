@@ -1,0 +1,28 @@
+.check {
+    color: red;
+}
+
+.btn {
+    &.active{
+        border:2px solid rgb(233, 233, 14) !important;
+        background-color: rgb(180, 180, 180);
+    }
+
+}
+
+
+.trip-details-link {
+  color: #0366d6;
+  text-decoration: none; 
+}
+
+.trip-details-link:hover{
+   
+    text-decoration: underline;
+}
+
+.trip-details-link:visited{
+    color: rgb(213, 213, 17);
+    text-decoration: dashed;
+    background-color: blue;
+}

@@ -1,0 +1,15 @@
+@import 'theme';
+
+body{
+    @include light-theme;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+p{
+    font-weight: 400;
+}
+
+a{
+    box-shadow: 0px 0px 12px #83BBD366;
+}

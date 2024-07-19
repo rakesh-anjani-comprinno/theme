@@ -1,0 +1,15 @@
+@import 'variables-dark';
+@import 'variables-light';
+@mixin light-theme {
+    --primary-color: #{$light-primary-color};
+    --secondary-color: #{$light-secondary-color};
+    --background-color: #{$light-background-color};
+    --text-color: #{$light-text-color};
+}
+
+@mixin dark-theme {
+    --primary-color: #{$dark-primary-color};
+    --secondary-color: #{$dark-secondary-color};
+    --background-color: #{$dark-background-color};
+    --text-color: #{$dark-text-color};
+}

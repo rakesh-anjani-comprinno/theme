@@ -1,0 +1,15 @@
+@import 'theme';
+body{
+    @include dark-theme;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+a{
+    color:var(--secondary-color);
+    text-decoration: none;
+}
+
+.toggle-color{
+    color:orange;
+}
