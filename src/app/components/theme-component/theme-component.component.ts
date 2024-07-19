@@ -19,9 +19,7 @@ export class ThemeComponentComponent implements OnInit{
 
   ngOnInit(): void {
       this.currentTheme = this.themeService.getActivetheme();
-      console.log(this.activatedRoute.snapshot.url)
-      console.log(window.location.href)
-      window.location.href='https://www.google.com/'
+  
   }
   
   toggleTheme(newTheme){
